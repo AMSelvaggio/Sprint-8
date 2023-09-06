@@ -1,0 +1,25 @@
+*{
+    background-color: black;
+}
+
+
+body, html {
+    background-color: black;
+    margin: 0;
+    color: yellow;
+    font-weight: bold;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.detail-section img {
+    max-width: 400px;
+    max-height: 400px;
+    display: block; 
+}

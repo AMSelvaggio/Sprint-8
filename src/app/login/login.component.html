@@ -1,0 +1,17 @@
+<head></head>
+
+
+
+
+<body>
+    
+
+
+<div class="login-container">
+    <h2>Login</h2>
+    <input [(ngModel)]="email" placeholder="Email">
+    <input [(ngModel)]="password" type="password" placeholder="Contraseña">
+    <button (click)="login()">Ingresar</button>
+    <p *ngIf="errorMessage">{{ errorMessage }}</p>
+  </div>
+  </body>

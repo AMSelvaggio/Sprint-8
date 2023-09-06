@@ -1,0 +1,104 @@
+<head></head>
+
+
+
+<body>
+  
+  <div class="main-container">
+  
+    
+
+<div *ngIf="starship">
+    <h2>{{ starship.name }}</h2>
+
+
+    <div class="detail-section">
+      <img [src]="'https://starwars-visualguide.com/assets/img/starships/' + getStarshipId(starship.url) + '.jpg'" alt="{{ starship.name }}" />
+    </div>
+  
+  
+    <div class="detail-section">
+      <img [src]="" alt="{{ starship.name }}" /> <!-- Si la API realmente proporciona una imagen, de lo contrario, elimina esta línea -->
+    </div>
+  
+    <div class="detail-section">
+      <strong>Modelo:</strong> {{ starship.model }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Clase Starship:</strong> {{ starship.starship_class }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Fabricante:</strong> {{ starship.manufacturer }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Costo:</strong> {{ starship.cost_in_credits }} créditos
+    </div>
+  
+    <div class="detail-section">
+      <strong>Equipo:</strong> {{ starship.crew }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Capacidad de pasajeros:</strong> {{ starship.passengers }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Capacidad de carga:</strong> {{ starship.cargo_capacity }} kg (o la unidad que utilice la API)
+    </div>
+  
+    <div class="detail-section">
+      <strong>Consumibles:</strong> {{ starship.consumables }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Longitud:</strong> {{ starship.length }} m (o la unidad que utilice la API)
+    </div>
+  
+    <div class="detail-section">
+      <strong>Velocidad máxima en atmósfera:</strong> {{ starship.max_atmosphering_speed }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Clasificación de hiperpropulsión:</strong> {{ starship.hyperdrive_rating }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Velocidad máxima en espacio real:</strong> {{ starship.MGLT }}
+    </div>
+  
+    <div class="detail-section">
+      <strong>Pilotos:</strong>
+      <ul>
+        <li *ngFor="let pilot of starship.pilots">
+          
+          <img [src]="pilot.image" alt="{{ pilot.name }}" /> {{ pilot.name }}
+        </li>
+      </ul>
+    </div>
+  
+    <div class="detail-section">
+      <strong>Pilotos:</strong>
+      <ul>
+        <li *ngFor="let pilot of pilots">
+          <img [src]="'https://starwars-visualguide.com/assets/img/characters/' + getPilotId(pilot.url) + '.jpg'" alt="{{ pilot.name }}" /> {{ pilot.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <style>
+    .detail-section {
+      margin-bottom: 15px;
+    }
+  </style>
+  
+
+
+</div>
+
+
+</body>
+

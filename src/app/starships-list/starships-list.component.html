@@ -1,0 +1,17 @@
+<head></head>
+
+<body>
+  
+<ul>
+  <li *ngFor="let starship of starships">
+    <div class="starship-item">
+      <a [routerLink]="['/starship', starship.url.split('/starships/')[1].replace('/', '')]">
+       Name:  {{ starship.name }} 
+      </a>
+      <br>
+      Model: {{ starship.model }}
+    </div>
+  </li>
+</ul>
+<button class="view-more-btn"   (click)="onViewMore()">View More</button>
+</body>

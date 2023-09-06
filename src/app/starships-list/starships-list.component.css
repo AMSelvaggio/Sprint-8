@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+body {
+   
+    background-color: black;
+    color: yellow; 
+}
+
+
+
+.starship-item {
+    border: 2px solid yellow; 
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: yellow; 
+}
+
+
+
+.starship-item a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.starship-item a:hover {
+    text-decoration: underline;
+}
+
+
+.view-more-btn {
+    background-color: black;
+    color: yellow; 
+    font-size: 1.5rem; 
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.view-more-btn:hover {
+    background-color: #222; 
+}
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+*{
+
+    margin:0;
+    padding:0;
+}
+
+
+
+body {    
+    background-image: url('/assets/img/resurgir-welcome.jfif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+   
+
+
+
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% de la altura de la ventana del navegador */
+    background-color: black;
+    color: yellow; /* Color del texto */
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 50%; /* Para hacer el botón circular */
+    width: 100px;  /* Ajusta según lo grande que desees el botón */
+    height: 100px; /* Asegúrate de que el ancho y el alto sean iguales para un círculo perfecto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Un amarillo un poco más oscuro para el efecto hover */
+}

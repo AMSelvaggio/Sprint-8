@@ -1,0 +1,18 @@
+<head></head>
+
+<body>
+  <div class="register-container">
+    <form (submit)="register()">
+        <div>
+          <label>Email:</label>
+          <input [(ngModel)]="email" type="email" name="email" required>
+        </div>
+        <div>
+          <label>Password:</label>
+          <input [(ngModel)]="password" type="password" name="password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+  </div>
+  
+</body>

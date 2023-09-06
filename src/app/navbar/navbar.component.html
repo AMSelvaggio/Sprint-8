@@ -1,0 +1,15 @@
+<nav>
+  
+  <div class="center-container">
+      <a routerLink="/">Inicio</a>
+      <a routerLink="/starships">Naves</a>
+  </div>
+  
+ 
+  <div class="right-container">
+      <a routerLink="/login">Login</a>
+      <a routerLink="/register">Registro</a>
+      <button *ngIf="isUserLoggedIn" (click)="logout()">Cerrar Sesión</button>
+  </div>
+</nav>
+
